@@ -1,0 +1,116 @@
+@use "sass:math";
+// ===============================================================================
+// Setting
+// ===============================================================================
+$fontSize:16;
+
+// ************* Viewport *************
+// TB
+$tbViewport:1040px;
+
+// SP
+$spViewport:768px;
+
+// *************************************************
+//Mixin
+// *************************************************
+//クリアフィックス
+@mixin clearfix{
+  &::after{
+    content:""; display:block; clear:both;
+  }
+}
+
+//ホバー時の透過処理
+@mixin hoverLink($value:.8){
+  &:hover{
+    opacity:$value;
+  }
+}
+
+//ホバー時の透過処理（テキストの下線の打消し有）
+@mixin hoverLinkT($value:.8){
+  &:hover{
+    opacity:$value;
+    text-decoration:none;
+  }
+}
+
+//フォントをまとめて設定する処理
+@mixin fontSet($size, $height, $spacing:0, $weight:4) {
+  font-size: f($size);
+  @if ($height != 0){
+    line-height: lh($height,$size);
+  }
+  @if ($spacing != 0){
+    letter-spacing: #{calc($spacing/1000)}+em;
+  }
+  @if ($weight != 4 and $weight != 0){
+    font-weight: $weight*100;
+  }
+}
+
+//メディアクエリー（PC表示のみ）
+@mixin pc{
+  @media screen and (min-width:$spViewport+1){
+    @content;
+  }
+}
+
+//メディアクエリー（TB表示）
+@mixin tb{
+  @media screen and (max-width:$tbViewport){
+    @content;
+  }
+}
+
+//メディアクエリー（SP表示）
+@mixin sp{
+  @media screen and (max-width:$spViewport){
+    @content;
+  }
+}
+
+// *************************************************
+//Function
+// *************************************************
+//入力した引数で、フォントサイズをrem指定（PC用）
+@function f($value){
+  @return calc(round( calc($value / $fontSize) * 10000)/ 10000)+rem;
+}
+
+//入力した引数で、フォントサイズをrem指定（SP用）
+@function fs($value){
+  @return calc(round( calc($value / 2 / $fontSize) * 10000)/ 10000)+rem;
+}
+
+//デザインデータからLineHeightを計算する場合に使用
+@function lh($lineHeight, $fontSize){
+  @return calc( ceil( calc($lineHeight/$fontSize)*100 )/100 );
+};
+
+//幅をもとに、vw値を算出する場合に使用（PC用）
+@function vw-pc($value){
+  @return calc( round( calc($value/1366)*10000 ) /100)+vw;
+}
+
+//幅をもとに、vw値を算出する場合に使用（SP用）
+@function vw-sp($value){
+  @return calc( round( calc($value/375)*10000 ) /100)+vw;
+}
+
+//パーセンテージを小数三桁で繰り上げする処理（Chrome合わせ）
+@function p($value, $value2, $value3){
+  @if ($value3 == 'f'){
+    @return percentage(calc( floor( calc($value/$value2)*100000 )/100000 ));
+  }@else if ($value3 == 'r'){
+    @return percentage(calc( round( calc($value/$value2)*100000 )/100000 ));
+  }@else if ($value3 == 'c'){
+    @return percentage(calc( ceil( calc($value/$value2)*100000 )/100000 ));
+  }
+}
+
+//round計算
+@function r($value, $value2){
+  @return round( calc($value*$value2) );
+}

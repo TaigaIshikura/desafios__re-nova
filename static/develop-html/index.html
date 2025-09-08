@@ -1,0 +1,31 @@
+{% set pagename = '' %}
+{% set pagedescription = '' %}
+{% set pageid = '' %}
+{% set hierarchy = 1 %}
+{% extends '_template.html' %}
+
+{% block local_css -%}
+<!-- local css -->
+<link rel="stylesheet" href="./assets/css/top.css">
+<!-- / local css -->
+{%- endblock %}
+
+{% block contents -%}
+<article class="contentsArea" id="contents">
+  {% include "_top-sec-1.html" %}
+  {% include "_top-sec-2.html" %}
+  {% include "_top-sec-3.html" %}
+  {% include "_top-sec-4.html" %}
+  {% include "_top-sec-5.html" %}
+  {% include "_top-sec-6.html" %}
+  {% include "_top-sec-7.html" %}
+  {% include "_top-sec-8.html" %}
+  {% include "_top-sec-9.html" %}
+  {% include "_top-sec-10.html" %}
+</article><!-- / .contentsArea -->
+{%- endblock %}
+
+{% block local_js -%}
+<!-- local js -->
+<!-- / local js -->
+{%- endblock %}

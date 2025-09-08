@@ -1,0 +1,71 @@
+@import "setting";
+
+// *************************************************
+// Copy Module Name List
+// *************************************************
+// menuBtn
+
+
+// menuBtn
+.menuBtn{
+  $barColor: darkBlue;
+  $barWidth: 30px;
+  $barHeight: 20px;
+  $boederHeight: 2px;
+  width: 50px;
+  height: 50px;
+  background: #ccc;
+  position: absolute;
+  &__bar{
+    width: $barWidth;
+    height: $barHeight;
+    position: absolute;
+    top:0; right:0; left:0; bottom:0;
+    margin: auto;
+    &::before, &::after{
+      position:absolute;
+      content:"";
+      display:block;
+      left:0;
+      width: 100%; height: $boederHeight;
+      background: $barColor;
+      transition-property: left, top, bottom, transform;
+      transition-duration: .3s;
+    }
+    &::before{
+      top:0;
+      transform-origin: left top;
+    }
+    &::after{
+      bottom:0;
+      transform-origin: left bottom;
+    }
+    span{
+      display: block;
+      width: 100%;
+      height: $boederHeight;
+      background: $barColor;
+      position: absolute;
+      top:0; bottom:0; left:0;
+      margin: auto 0;
+      transition: opacity .3s;
+    }
+  }
+  &.is-active{
+    .menuBtn__bar{
+      &::before{
+        transform: rotate(45deg);
+        top:round( calc( ($barHeight - ($barWidth/1.41421 + ($boederHeight/1.41421))) / 2 ) );
+        left:round( calc( ($barWidth - ($barWidth/1.41421 - ($boederHeight/1.41421))) / 2 ) );
+      }
+      &::after{
+        transform: rotate(-45deg);
+        bottom:round( calc( ($barHeight - ($barWidth/1.41421 + ($boederHeight/1.41421))) / 2 ) );
+        left:round( calc( ($barWidth - ($barWidth/1.41421 - ($boederHeight/1.41421))) / 2 ) );
+      }
+    }
+    span{
+      opacity: 0;
+    }
+  }
+}

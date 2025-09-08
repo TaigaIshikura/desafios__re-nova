@@ -1,0 +1,35 @@
+{
+  "name": "base",
+  "version": "0.0.0",
+  "description": "gulp base file in grooweb",
+  "main": "gulpfile.js",
+  "author": "taiga ishikura",
+  "license": "MIT",
+  "scripts": {
+    "start": "gulp",
+    "release": "gulp build"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.12.12",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-changed": "^4.0.3",
+    "gulp-data": "*",
+    "gulp-ejs": "^2.1.1",
+    "gulp-html-beautify": "*",
+    "gulp-jscs": "^4.1.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-nunjucks-render": "*",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "*",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.41.0"
+  },
+  "dependencies": {
+    "gulp-cached": "^1.1.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-replace": "^1.0.0",
+    "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-pngquant": "^7.0.0"
+  }
+}

@@ -1,0 +1,18 @@
+{% if ( hierarchy == 1 ) %}{% set path = '.' %}
+{% elif ( hierarchy == 2 ) %}{% set path = '..' %}
+{% elif ( hierarchy == 3 ) %}{% set path = '../..' %}
+{% else %}
+{% endif %}
+{% include '_head.html' -%}
+{% block local_css -%}{%- endblock %}
+</head>
+<body>
+<div id="pageWrap">
+{% include '_header.html' -%}
+{% block contents -%}{%- endblock %}
+{% include '_footer.html' -%}
+</div><!-- / #pageWrap -->
+{% include '_script.html' -%}
+{% block local_js -%}{%- endblock %}
+</body>
+</html>

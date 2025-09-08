@@ -1,0 +1,21 @@
+@charset "utf-8";
+@import "setting";
+
+/* ===============================================================================
+Module
+=============================================================================== */
+/* heading module 
+========================= */
+/* m-heading-1 */
+.m-heading-1{
+  @include sp{
+  }
+}
+
+/* general module 
+========================= */
+.txtL{text-align: left!important;}
+.txtC{text-align: center!important;}
+.txtR{text-align: right!important;}
+.mid{font-weight:500!important}
+.bold{font-weight:700!important}
