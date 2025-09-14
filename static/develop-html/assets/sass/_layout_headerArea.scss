@@ -3,7 +3,61 @@
 Header
 =============================================================================== */
 .headerArea{
+  padding: 16px 0;
+  background: #fff;
+  position: fixed;
+  top: 0; left: 0; width: 100%;
+  position: fixed;
   &__inr{
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+  }
+  .blks-1{
+    .logo{
+      a{
+        @include hoverLink;
+      }
+      img{
+        display: block;
+        height: 56px;
+        width: 100%;
+      }
+    }
+  }
+  .blks-2{
+    flex: 1;
+    &__inr{
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    .llist{
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: 16px;
+      &__item{
+        font-size: f(15);
+        font-weight: 700;
+        font-family: $en;
+        margin: 4px 16px;
+        @include pc{
+          a:hover{
+            color: $blue;
+          }
+        }
+      }
+    }
+    .insta{
+      width: 48px;
+      a{
+        @include hoverLink;
+      }
+      img{
+        width: 100%;
+        display: block;
+      }
+    }
   }
   @include sp{
   }
