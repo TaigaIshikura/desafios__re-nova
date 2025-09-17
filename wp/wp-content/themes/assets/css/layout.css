@@ -59,7 +59,7 @@ Header
 }
 @media screen and (min-width: 769px) {
   .headerArea .blks-2 .llist__item a:hover {
-    color: #12609F;
+    color: #12609f;
   }
 }
 .headerArea .blks-2 .insta__ico {
@@ -68,7 +68,7 @@ Header
   height: 48px;
   -webkit-mask: url("../img/cmn/cmn_sns01.svg") no-repeat center center/contain;
           mask: url("../img/cmn/cmn_sns01.svg") no-repeat center center/contain;
-  background: #12609F;
+  background: #12609f;
 }
 .headerArea .blks-2 .insta a:hover {
   opacity: 0.8;

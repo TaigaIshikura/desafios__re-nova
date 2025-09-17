@@ -3,9 +3,69 @@
 
 /* top-sec-5 */
 .top-sec-5{
+  background: $skyblue;
+  padding: 96px 0;
   &__inr{
+    padding: 0 40px;
   }
   .blks-1{
+    margin-bottom: 32px;
+    .h{
+      margin-bottom: 24px;
+    }
+    .txt{
+      text-align: center;
+      font-size: f(16);
+      line-height: lh(24,16);
+    }
+  }
+  .blks-2{
+    max-width: 960px;
+    margin: 0 auto 64px;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+    padding: 40px 40px 48px;
+    &::after{
+      position:absolute;
+      content:"";
+      display:block;
+      top: 6px; left: 6px; right: 6px; bottom: 6px;
+      border: solid 1px $blue;
+    }
+    .h{
+      font-size: f(24);
+      line-height: lh(40,24);
+      font-weight: 700;
+      letter-spacing: .05em;
+      color: $blue;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    .txt{
+      font-size: f(16);
+      line-height: lh(28,16);
+      font-weight: 700;
+      text-align: center;
+    }
+    .txt-2{
+      font-size: f(16);
+      line-height: lh(28,16);
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    .btn{
+      margin-bottom: 32px;
+    }
+    .txt-3{
+      font-size: f(16);
+      line-height: lh(28,16);
+      text-align: center;
+    }
+  }
+  .blks-3{
+    max-width: 800px;
+    margin: 0 auto;
   }
   @include sp{
   }

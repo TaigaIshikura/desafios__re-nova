@@ -8,4 +8,73 @@ Top
 /* top-sec-3 */
 /* top-sec-4 */
 /* top-sec-5 */
+.top-sec-5 {
+  background: #deecf6;
+  padding: 96px 0;
+}
+.top-sec-5__inr {
+  padding: 0 40px;
+}
+.top-sec-5 .blks-1 {
+  margin-bottom: 32px;
+}
+.top-sec-5 .blks-1 .h {
+  margin-bottom: 24px;
+}
+.top-sec-5 .blks-1 .txt {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.top-sec-5 .blks-2 {
+  max-width: 960px;
+  margin: 0 auto 64px;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+  padding: 40px 40px 48px;
+}
+.top-sec-5 .blks-2::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  border: solid 1px #12609f;
+}
+.top-sec-5 .blks-2 .h {
+  font-size: 1.5rem;
+  line-height: 1.67;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #12609f;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.top-sec-5 .blks-2 .txt {
+  font-size: 1rem;
+  line-height: 1.75;
+  font-weight: 700;
+  text-align: center;
+}
+.top-sec-5 .blks-2 .txt-2 {
+  font-size: 1rem;
+  line-height: 1.75;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.top-sec-5 .blks-2 .btn {
+  margin-bottom: 32px;
+}
+.top-sec-5 .blks-2 .txt-3 {
+  font-size: 1rem;
+  line-height: 1.75;
+  text-align: center;
+}
+.top-sec-5 .blks-3 {
+  max-width: 800px;
+  margin: 0 auto;
+}
 /* top-sec-6 */

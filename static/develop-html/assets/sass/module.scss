@@ -6,8 +6,168 @@ Module
 =============================================================================== */
 /* heading module 
 ========================= */
-/* m-heading-1 */
-.m-heading-1{
+/* m-h-1 */
+.m-h-1{
+  text-align: center;
+  font-family: $en;
+  font-weight: 70;
+  color: $blue;
+  font-size: f(38);
+  line-height: lh(47,38);
+  @include sp{
+  }
+}
+
+/* contact module 
+========================= */
+/* m-cnt-1 */
+.m-cnt-1{
+  &__item{
+    &:not(:last-child){
+      margin-bottom: 32px;
+    }
+  }
+  &__grp{
+    margin-bottom: 40px;
+  }
+  &__grp-2{
+    margin-bottom: 48px;
+  }
+  &__ttl{
+    font-size: f(20);
+    line-height: lh(32,20);
+    font-weight: 700;
+    color: $blue;
+    letter-spacing: .05em;
+    padding-left: 11px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    &::before{
+      position:absolute;
+      content:"";
+      display:block;
+      top:0; left:0; bottom: 0;
+      width: 4px;
+      background: $blue;
+      color: $blue;
+    }
+  }
+  &__txt{
+    font-size: f(16);
+    line-height: lh(24,16);
+    margin-top: 12px;
+  }
+  &__iTxt{
+    input[type="text"],input[type="email"] {
+      height: 40px;
+      width: 100%;
+      padding: 4px 16px;
+      background: #fff;
+      font-size: f(16);
+      line-height: 1.5;
+      box-sizing: border-box;
+      appearance: none;
+      border-radius: 0;
+      border: none;
+      display: block;
+    }
+  }
+  &__req{
+    border-radius: 20px;
+    border: solid 2px $red;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    font-size: f(12);
+    font-weight: 700;
+    line-height: lh(16,12);
+    color: $red;
+    padding: 0 8px;
+    margin-left: 12px;
+  }
+  &__tArea{
+    textarea{
+      height: 240px;
+      width: 100%;
+      padding: 16px;
+      background: #fff;
+      font-size: f(16);
+      line-height: 1.5;
+      box-sizing: border-box;
+      appearance: none;
+      border-radius: 0;
+      border: none;
+      display: block;
+    }
+  }
+  &__agree{
+    &__txt{
+      text-align: center;
+      font-size: f(16);
+      line-height: lh(24,16);
+      font-weight: 500;
+      margin-bottom: 32px;
+      a{
+        @include pc{
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    &__chk{
+      text-align: center;
+      .wpcf7-list-item{
+        margin: 0;
+        display: inline-block;
+      }
+      input{
+        margin: 0;
+        display: none;
+        & + .wpcf7-list-item-label, & + span{
+          margin: 0;
+          position: relative;
+          padding-left: 40px;
+          font-size: f(16);
+          font-weight: 700;
+          line-height: 1.5;
+          user-select: none;
+          a{
+            color: $blue;
+            text-decoration: underline;
+            @include hoverLink;
+          }
+          &::before, &::after{
+            content: "";
+            display: block;
+            width: 28px;
+            height: 28px;
+            top: -2px;
+            position: absolute;
+          }
+          &::before{
+            border: solid 1px $blue;
+            box-sizing: border-box;
+            background: #fff;
+          }
+          &::after{
+            background: #fff;
+            mask: url("../img/cmn/cmn_chk01.svg") no-repeat center center / 70% auto;
+          }
+        }
+        &:checked + .wpcf7-list-item-label, &:checked + span{
+          &::before{
+            border-color: $blue;
+            background: $blue;
+          }
+        }
+      }
+    }
+  }
   @include sp{
   }
 }
