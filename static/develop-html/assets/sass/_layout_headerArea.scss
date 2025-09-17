@@ -49,13 +49,14 @@ Header
       }
     }
     .insta{
-      width: 48px;
+      &__ico{
+        display: block;
+        width: 48px; height: 48px;
+        mask: url("../img/cmn/cmn_sns01.svg") no-repeat center center / contain;
+        background: $blue;
+      }
       a{
         @include hoverLink;
-      }
-      img{
-        width: 100%;
-        display: block;
       }
     }
   }

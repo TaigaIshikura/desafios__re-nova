@@ -62,15 +62,16 @@ Header
     color: #12609F;
   }
 }
-.headerArea .blks-2 .insta {
+.headerArea .blks-2 .insta__ico {
+  display: block;
   width: 48px;
+  height: 48px;
+  -webkit-mask: url("../img/cmn/cmn_sns01.svg") no-repeat center center/contain;
+          mask: url("../img/cmn/cmn_sns01.svg") no-repeat center center/contain;
+  background: #12609F;
 }
 .headerArea .blks-2 .insta a:hover {
   opacity: 0.8;
-}
-.headerArea .blks-2 .insta img {
-  width: 100%;
-  display: block;
 }
 /* ===============================================================================
 Footer
