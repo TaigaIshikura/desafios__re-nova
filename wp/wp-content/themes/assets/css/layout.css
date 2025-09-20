@@ -8,7 +8,7 @@ Header
   top: 0;
   left: 0;
   width: 100%;
-  position: fixed;
+  z-index: 9999;
 }
 .headerArea__inr {
   padding: 0 40px;
@@ -228,3 +228,13 @@ Footer
 /* ===============================================================================
 Contents
 =============================================================================== */
+.contentsArea {
+  padding-top: 88px;
+}
+.contentsArea .anchor {
+  padding-top: 88px;
+  margin-top: -88px;
+}
+#top .contentsArea {
+  padding-top: 0 !important;
+}

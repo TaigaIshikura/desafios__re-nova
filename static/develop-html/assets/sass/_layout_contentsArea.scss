@@ -3,6 +3,16 @@
 Contents
 =============================================================================== */
 .contentsArea{
+  padding-top: 88px;
+  .anchor{
+    padding-top: 88px;
+    margin-top: -88px;
+  }
+  @at-root{
+    #top .contentsArea{
+      padding-top: 0!important;
+    }
+  }
   &__inr{
   }
   @include sp{
