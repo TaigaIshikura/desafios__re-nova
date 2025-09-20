@@ -19,8 +19,10 @@ Header
       -ms-flex-align: center;
           align-items: center;
 }
-.headerArea .blks-1 .logo a:hover {
-  opacity: 0.8;
+@media screen and (min-width: 769px) {
+  .headerArea .blks-1 .logo a:hover {
+    opacity: 0.8;
+  }
 }
 .headerArea .blks-1 .logo img {
   display: block;
@@ -70,12 +72,159 @@ Header
           mask: url("../img/cmn/cmn_sns01.svg") no-repeat center center/contain;
   background: #12609f;
 }
-.headerArea .blks-2 .insta a:hover {
-  opacity: 0.8;
+@media screen and (min-width: 769px) {
+  .headerArea .blks-2 .insta a:hover {
+    opacity: 0.8;
+  }
 }
 /* ===============================================================================
 Footer
 =============================================================================== */
+.footerArea {
+  background: #134161;
+  padding: 64px 0 56px;
+}
+.footerArea__inr {
+  max-width: 1360px;
+  padding: 0 40px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.footerArea .blks-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 112px;
+}
+.footerArea .blks-1 .logo {
+  width: 244px;
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 769px) {
+  .footerArea .blks-1 .logo a:hover {
+    opacity: 0.8;
+  }
+}
+.footerArea .blks-1 .logo img {
+  width: 100%;
+  display: block;
+}
+.footerArea .blks-1 .llist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -4px -16px;
+}
+.footerArea .blks-1 .llist__item {
+  font-size: 0.9375rem;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-weight: 700;
+  margin: 4px 16px;
+}
+@media screen and (min-width: 769px) {
+  .footerArea .blks-1 .llist__item a:hover {
+    opacity: 0.8;
+  }
+}
+.footerArea .blks-1 .llist__item a._insta {
+  width: 48px;
+  height: 48px;
+  display: block;
+  position: relative;
+}
+.footerArea .blks-1 .llist__item a._insta::before, .footerArea .blks-1 .llist__item a._insta::after {
+  position: absolute;
+  content: "";
+  display: block;
+  border-radius: 100%;
+}
+.footerArea .blks-1 .llist__item a._insta::before {
+  background: #fff;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+}
+.footerArea .blks-1 .llist__item a._insta::after {
+  -webkit-mask: url("../img/cmn/cmn_sns01.svg") no-repeat center center/contain;
+          mask: url("../img/cmn/cmn_sns01.svg") no-repeat center center/contain;
+  background: #12609f;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.footerArea .blks-1 .logo-2 {
+  width: 356px;
+  margin-bottom: 16px;
+  background: #fff;
+}
+@media screen and (min-width: 769px) {
+  .footerArea .blks-1 .logo-2 a:hover {
+    opacity: 0.8;
+  }
+}
+.footerArea .blks-1 .logo-2 img {
+  width: 100%;
+  display: block;
+}
+.footerArea .blks-1 .llist-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: -4px -12px;
+}
+.footerArea .blks-1 .llist-2__item {
+  font-size: 0.9375rem;
+  color: #fff;
+  margin: 4px 12px;
+}
+.footerArea .blks-1 .llist-2__item a {
+  display: inline-block;
+  padding-left: 27px;
+  position: relative;
+}
+@media screen and (min-width: 769px) {
+  .footerArea .blks-1 .llist-2__item a:hover {
+    opacity: 0.8;
+  }
+}
+.footerArea .blks-1 .llist-2__item a::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto 0;
+  width: 21px;
+  height: 9px;
+  -webkit-mask: url("../img/cmn/cmn_arr01.svg") no-repeat center center/contain;
+          mask: url("../img/cmn/cmn_arr01.svg") no-repeat center center/contain;
+  background: #fff;
+}
+.footerArea .copyright {
+  text-align: center;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
 /* ===============================================================================
 Contents
 =============================================================================== */

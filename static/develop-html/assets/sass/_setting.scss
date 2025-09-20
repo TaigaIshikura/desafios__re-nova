@@ -31,8 +31,10 @@ $grad: linear-gradient(90deg, #12609F, #A6DEEF);
 
 //ホバー時の透過処理
 @mixin hoverLink($value:.8){
-  &:hover{
-    opacity:$value;
+  @include pc{
+    &:hover{
+      opacity:$value;
+    }
   }
 }
 

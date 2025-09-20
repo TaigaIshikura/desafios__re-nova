@@ -227,8 +227,10 @@ Module
   color: #12609f;
   text-decoration: underline;
 }
-.m-cnt-1__agree__chk input + .wpcf7-list-item-label a:hover, .m-cnt-1__agree__chk input + span a:hover {
-  opacity: 0.8;
+@media screen and (min-width: 769px) {
+  .m-cnt-1__agree__chk input + .wpcf7-list-item-label a:hover, .m-cnt-1__agree__chk input + span a:hover {
+    opacity: 0.8;
+  }
 }
 .m-cnt-1__agree__chk input + .wpcf7-list-item-label::before, .m-cnt-1__agree__chk input + .wpcf7-list-item-label::after, .m-cnt-1__agree__chk input + span::before, .m-cnt-1__agree__chk input + span::after {
   content: "";

@@ -3,7 +3,111 @@
 Footer
 =============================================================================== */
 .footerArea{
+  background: $darkblue;
+  padding: 64px 0 56px;
   &__inr{
+    max-width: 1360px;
+    padding: 0 40px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+  .blks-1{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 112px;
+    .logo{
+      width: 244px;
+      margin-bottom: 32px;
+      a{
+        @include hoverLink;
+      }
+      img{
+        width: 100%;
+        display: block;
+      }
+    }
+    .llist{
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: -4px -16px;
+      &__item{
+        font-size: f(15);
+        font-family: $en;
+        color:#fff;
+        font-weight: 700;
+        margin: 4px 16px;
+        a{
+          @include hoverLink;
+          &._insta{
+            width: 48px; height: 48px;
+            display: block;
+            position: relative;
+            &::before, &::after{
+              position:absolute;
+              content:"";
+              display:block;
+              border-radius: 100%;
+            }
+            &::before{
+              background: #fff;
+              top: 2px; left: 2px; right: 2px; bottom: 2px;
+            }
+            &::after{
+              mask: url("../img/cmn/cmn_sns01.svg") no-repeat center center / contain;
+              background: $blue;
+              top: 0; left: 0; right: 0; bottom: 0;
+            }
+          }
+        }
+      }
+    }
+    .logo-2{
+      width: 356px;
+      margin-bottom: 16px;
+      background: #fff;
+      a{
+        @include hoverLink;
+      }
+      img{
+        width: 100%;
+        display: block;
+      }
+    }
+    .llist-2{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: -4px -12px;
+      &__item{
+        font-size: f(15);
+        color:#fff;
+        margin: 4px 12px;
+        a{
+          display: inline-block;
+          padding-left: 27px;
+          position: relative;
+          @include hoverLink;
+          &::before{
+            position:absolute;
+            content:"";
+            display:block;
+            top:0; left:0; bottom: 0;
+            margin: auto 0;
+            width: 21px; height: 9px;
+            mask: url("../img/cmn/cmn_arr01.svg") no-repeat center center / contain;
+            background: #fff;
+          }
+        }
+      }
+    }
+  }
+  .copyright{
+    text-align: center;
+    color: #fff;
+    font-size: f(12);
+    font-weight: 500;
   }
   @include sp{
   }
