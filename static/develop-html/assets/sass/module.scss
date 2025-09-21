@@ -155,6 +155,18 @@ Module
       }
     }
   }
+  &.m-slider-1_t2{
+    .m-slider-1{
+      &__inr{
+        &::after{
+          border-color: $skyblue;
+        }
+      }
+    }
+    .swiper-slide{
+      padding-top: 56.25%;
+    }
+  }
 }
 
 /* contact module 

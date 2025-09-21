@@ -177,6 +177,12 @@ Module
 .m-slider-1__pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #12609f;
 }
+.m-slider-1.m-slider-1_t2 .m-slider-1__inr::after {
+  border-color: #deecf6;
+}
+.m-slider-1.m-slider-1_t2 .swiper-slide {
+  padding-top: 56.25%;
+}
 
 /* contact module 
 ========================= */

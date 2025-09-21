@@ -3,7 +3,7 @@
 
 /* top-sec-3 */
 .top-sec-3{
-  padding: 72px 0;
+  padding: 72px 40px;
   background: $skyblue;
   position: relative;
   z-index: 1;
@@ -17,8 +17,111 @@
     background: url("../img/top/top_bg01.jpg") no-repeat center center / cover;
   }
   &__inr{
+    max-width: 1200px;
+    background: #fff;
+    padding: 88px 56px 64px;
+    box-sizing: border-box;
+    margin: 0 auto;
   }
   .blks-1{
+    position: relative; 
+    padding-bottom: 18px;
+    border-bottom: dotted 1px $text;
+    margin-bottom: 48px;
+    .grp{
+      position: absolute;
+      top: -44px; left: -80px;
+      display: flex;
+      align-items: baseline;
+      &__h{
+        font-size: f(24);
+        font-weight: 700;
+        line-height: lh(34,24);
+        letter-spacing: .15em;
+        background: $blue;
+        color:#fff;
+        padding: 4px 32px;
+        margin-right: 12px;
+      }
+      &__txt{
+        font-size: f(13);
+        line-height: lh(22,13);
+        font-weight: 700;
+      }
+    }
+    .col2{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &__lt{
+        order: 0;
+        padding: 24px 0 44px;
+      }
+      &__rt{
+        order: 1;
+        max-width: 464px;
+        width: 50%;
+        padding: 0 24px 0 56px;
+      }
+    }
+    .dlist{
+      &__item{
+        &:not(:last-child){
+          margin-bottom: 20px;
+        }
+        &__ttl{
+          font-size: f(16);
+          line-height: lh(24,16);
+          font-weight: 700;
+          color: $blue;
+          padding-left: 8px;
+          border-left: solid 3px $blue;
+          margin-bottom: 8px;
+        }
+        &__dtl{
+          font-size: f(16);
+          line-height: lh(28,16);
+        }
+      }
+    }
+    .slider{
+      
+    }
+  }
+  .blks-2{
+    .txt{
+      font-size: f(16);
+      line-height: lh(28,16);
+      margin-bottom: 32px;
+      em{
+        font-weight: 700;
+      }
+      strong{
+        font-weight: 700;
+        color: $blue;
+      }
+    }
+    .caution{
+      font-size: f(14);
+      line-height: lh(22,14);
+      padding-left: 1em;
+      text-indent: -1em;
+      margin-bottom: 56px;
+      a{
+        color: $blue;
+        text-decoration: underline;
+        @include hoverLink;
+      }
+    }
+    .btns{
+      display: flex;
+      justify-content: center;
+      margin: -6px -12px;
+      &__item{
+        width: 400px;
+        margin: 6px 12px;
+      }
+    }
   }
   @include sp{
   }
