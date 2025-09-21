@@ -4,6 +4,27 @@
 /* top-sec-2 */
 .top-sec-2{
   padding: 68px 0 112px;
+  position: relative;
+  z-index: 1;
+  &::before, &::after{
+    position:absolute;
+    content:"";
+    display:block;
+    width: 100%;
+    min-width: 1440px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 192px;
+    background: $blue;
+    clip-path: polygon(0 0, 0% 100%, 160px 0);
+  }
+  &::before{
+    top: -44px;
+  }
+  &::after{
+    bottom: -16px;
+    clip-path: polygon(calc(100% - 160px) 100%, 100% 100%, 100% 0);
+  }
   &__inr{
     padding: 0 40px;
   }
@@ -30,21 +51,47 @@
         background: $skyblue;
         padding: 32px 56px 24px;
         max-width: 576px;
-        width: 100%;
+        width: 50%;
         box-sizing: border-box;
         margin-right: 56px;
       }
       &__rt{
-        margin-top: 28px;
+        margin-top: 20px;
       }
     }
     .slider{
       width: 100%;
     }
     .txt{
+      display: inline-block;
+      font-size: f(18);
+      line-height: lh(26,18);
+      font-weight: 700;
+      letter-spacing: .02em;
       margin-bottom: 24px;
+      padding: 10px 0;
+      color: $green;
+      position: relative;
+      &::before, &::after{
+        position:absolute;
+        content:"";
+        display:block;
+        left:0; width: 100%;
+        height: 3px; border: solid 1px $green;
+        box-sizing: border-box;
+      }
+      &::before{
+        top: 0;
+      }
+      &::after{
+        bottom: 0;
+      }
     }
     .h{
+      font-size: f(24);
+      line-height: lh(35,24);
+      font-weight: 700;
+      letter-spacing: .1em;
       margin-bottom: 24px;
     }
     .txt-2{
@@ -60,7 +107,41 @@
       }
     }
     .dlist{
+      border-left: solid 4px #e9e9e9;
+      padding: 6px 0 8px 20px;
       margin-bottom: 24px;
+      &__item{
+        display: flex;
+        font-size: f(16);
+        line-height: lh(26,16);
+        letter-spacing: .1em;
+        color: $blue;
+        font-weight: 700;
+        &:not(:last-child){
+          margin-bottom: 12px;
+        }
+        &__ttl{
+          width: 144px;
+          overflow: hidden;
+          margin-right: 8px;
+          span{
+            display: inline-block;
+            position: relative;
+            &::after{
+              position:absolute;
+              content:"";
+              display:block;
+              top:0; left: calc(100% + 10px); bottom:0;
+              margin: auto 0;
+              height: 1px; width: 100vw;
+              background: $blue;
+            }
+          }
+        }
+        &__dtl{
+          flex: 1;
+        }
+      }
     }
     .txt-3{
       font-size: f(16);

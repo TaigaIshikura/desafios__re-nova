@@ -3,6 +3,10 @@ Top
 =============================================================================== */
 /* top-section
 ========================= */
+.top-secs {
+  overflow: hidden;
+}
+
 /* top-sec-1 */
 .top-sec-1 {
   height: 100vh;
@@ -12,7 +16,6 @@ Top
   padding-top: 88px;
   box-sizing: border-box;
   z-index: 1;
-  overflow: hidden;
 }
 .top-sec-1::before {
   position: absolute;
@@ -133,6 +136,31 @@ Top
 /* top-sec-2 */
 .top-sec-2 {
   padding: 68px 0 112px;
+  position: relative;
+  z-index: 1;
+}
+.top-sec-2::before, .top-sec-2::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  min-width: 1440px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 192px;
+  background: #12609f;
+  -webkit-clip-path: polygon(0 0, 0% 100%, 160px 0);
+          clip-path: polygon(0 0, 0% 100%, 160px 0);
+}
+.top-sec-2::before {
+  top: -44px;
+}
+.top-sec-2::after {
+  bottom: -16px;
+  -webkit-clip-path: polygon(calc(100% - 160px) 100%, 100% 100%, 100% 0);
+          clip-path: polygon(calc(100% - 160px) 100%, 100% 100%, 100% 0);
 }
 .top-sec-2__inr {
   padding: 0 40px;
@@ -166,20 +194,48 @@ Top
   background: #deecf6;
   padding: 32px 56px 24px;
   max-width: 576px;
-  width: 100%;
+  width: 50%;
   box-sizing: border-box;
   margin-right: 56px;
 }
 .top-sec-2 .blks-2 .col2__rt {
-  margin-top: 28px;
+  margin-top: 20px;
 }
 .top-sec-2 .blks-2 .slider {
   width: 100%;
 }
 .top-sec-2 .blks-2 .txt {
+  display: inline-block;
+  font-size: 1.125rem;
+  line-height: 1.45;
+  font-weight: 700;
+  letter-spacing: 0.02em;
   margin-bottom: 24px;
+  padding: 10px 0;
+  color: #5db4a8;
+  position: relative;
+}
+.top-sec-2 .blks-2 .txt::before, .top-sec-2 .blks-2 .txt::after {
+  position: absolute;
+  content: "";
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  border: solid 1px #5db4a8;
+  box-sizing: border-box;
+}
+.top-sec-2 .blks-2 .txt::before {
+  top: 0;
+}
+.top-sec-2 .blks-2 .txt::after {
+  bottom: 0;
 }
 .top-sec-2 .blks-2 .h {
+  font-size: 1.5rem;
+  line-height: 1.46;
+  font-weight: 700;
+  letter-spacing: 0.1em;
   margin-bottom: 24px;
 }
 .top-sec-2 .blks-2 .txt-2 {
@@ -195,7 +251,48 @@ Top
   margin-top: 24px;
 }
 .top-sec-2 .blks-2 .dlist {
+  border-left: solid 4px #e9e9e9;
+  padding: 6px 0 8px 20px;
   margin-bottom: 24px;
+}
+.top-sec-2 .blks-2 .dlist__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1rem;
+  line-height: 1.63;
+  letter-spacing: 0.1em;
+  color: #12609f;
+  font-weight: 700;
+}
+.top-sec-2 .blks-2 .dlist__item:not(:last-child) {
+  margin-bottom: 12px;
+}
+.top-sec-2 .blks-2 .dlist__item__ttl {
+  width: 144px;
+  overflow: hidden;
+  margin-right: 8px;
+}
+.top-sec-2 .blks-2 .dlist__item__ttl span {
+  display: inline-block;
+  position: relative;
+}
+.top-sec-2 .blks-2 .dlist__item__ttl span::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: calc(100% + 10px);
+  bottom: 0;
+  margin: auto 0;
+  height: 1px;
+  width: 100vw;
+  background: #12609f;
+}
+.top-sec-2 .blks-2 .dlist__item__dtl {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 .top-sec-2 .blks-2 .txt-3 {
   font-size: 1rem;

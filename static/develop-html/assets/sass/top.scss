@@ -6,6 +6,10 @@ Top
 =============================================================================== */
 /* top-section
 ========================= */
+.top-secs{
+    overflow: hidden;
+}
+
 @import "top-sec-1";
 @import "top-sec-2";
 @import "top-sec-3";

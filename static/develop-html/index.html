@@ -13,12 +13,14 @@
 {% block contents -%}
 <article class="contentsArea" id="contents">
   <div class="shadow"></div>
-  {% include "_top-sec-1.html" %}
-  {% include "_top-sec-2.html" %}
-  {% include "_top-sec-3.html" %}
-  {% include "_top-sec-4.html" %}
-  {% include "_top-sec-5.html" %}
-  {% include "_top-sec-6.html" %}
+  <div class="top-secs">
+    {% include "_top-sec-1.html" %}
+    {% include "_top-sec-2.html" %}
+    {% include "_top-sec-3.html" %}
+    {% include "_top-sec-4.html" %}
+    {% include "_top-sec-5.html" %}
+    {% include "_top-sec-6.html" %}
+  </div><!-- / .top-secs -->
 </article><!-- / .contentsArea -->
 {%- endblock %}
 
