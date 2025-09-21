@@ -3,9 +3,52 @@
 
 /* top-sec-4 */
 .top-sec-4{
+  padding: 72px 0 96px;
   &__inr{
+    max-width: 976px;
+    padding: 0 40px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
   }
   .blks-1{
+    .grp{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 24px;
+      &__h{
+        margin-right: 24px;
+      }
+      &__ico{
+        width: 56px; height: 56px;
+        mask: url("../img/cmn/cmn_sns01.svg") no-repeat center center / contain;
+        background: $blue;
+      }
+    }
+    .grp-2{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &__txt{
+        font-size: f(16);
+        line-height: lh(24,16);
+        margin-right: 24px;
+      }
+      &__btn{
+        width: 240px;
+        min-width: 240px;
+      }
+    }
+  }
+  .blks-2{
+    .txt{
+      font-size: f(17);
+      line-height: lh(25,17);
+      font-weight: 700;
+      color: $blue;
+      margin-bottom: 16px;
+    }
   }
   @include sp{
   }

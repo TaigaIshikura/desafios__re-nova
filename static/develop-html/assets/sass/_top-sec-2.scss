@@ -3,9 +3,76 @@
 
 /* top-sec-2 */
 .top-sec-2{
+  padding: 68px 0 112px;
   &__inr{
+    padding: 0 40px;
   }
   .blks-1{
+    margin-bottom: 54px;
+    .h{
+      margin-bottom: 10px;
+    }
+    .logo{
+      width: 217px;
+      margin: 0 auto;
+      img{
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+  .blks-2{
+    .col2{
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      &__lt{
+        background: $skyblue;
+        padding: 32px 56px 24px;
+        max-width: 576px;
+        width: 100%;
+        box-sizing: border-box;
+        margin-right: 56px;
+      }
+      &__rt{
+        margin-top: 28px;
+      }
+    }
+    .slider{
+      width: 100%;
+    }
+    .txt{
+      margin-bottom: 24px;
+    }
+    .h{
+      margin-bottom: 24px;
+    }
+    .txt-2{
+      font-size: f(16);
+      line-height: lh(32,16);
+      margin-bottom: 24px;
+      em{
+        color: $blue;
+        font-weight: 700;
+      }
+      p + p{
+        margin-top: 24px;
+      }
+    }
+    .dlist{
+      margin-bottom: 24px;
+    }
+    .txt-3{
+      font-size: f(16);
+      line-height: lh(32,16);
+      em{
+        color: $blue;
+        font-weight: 700;
+      }
+      p + p{
+        margin-top: 24px;
+      }
+    }
   }
   @include sp{
   }

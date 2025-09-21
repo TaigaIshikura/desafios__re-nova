@@ -9,10 +9,6 @@ let mq = function() {
   }
 }
 
-// objectFit
-// ***********************************************
-objectFitImages();
-
 // headerScroll
 // ***********************************************
 $win.on("scroll", function(){

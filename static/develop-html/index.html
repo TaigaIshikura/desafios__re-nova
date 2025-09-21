@@ -24,5 +24,29 @@
 
 {% block local_js -%}
 <!-- local js -->
+<script>
+let swiper;
+$(function() {
+  swiper = new Swiper('.js-aslider', {
+    speed: 1000,
+    pagination: {
+      el: '.js-asliderPagination',
+      clickable: true
+    },
+    navigation: {
+      nextEl: '.js-asliderNext',
+      prevEl: '.js-asliderPrev',
+    },
+    loop: true,
+    slidesPerView: 'auto',
+    spaceBetween:0,
+    effect: 'fade',
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false, 
+    }
+  });
+});
+</script>
 <!-- / local js -->
 {%- endblock %}
