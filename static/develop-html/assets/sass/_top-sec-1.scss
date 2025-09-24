@@ -96,6 +96,13 @@
       }
     }
   }
+  @include tb{
+    height: auto;
+    min-height: 800px;
+    .blks-1{
+      margin-right: -400px;
+    }
+  }
   @include sp{
   }
 }

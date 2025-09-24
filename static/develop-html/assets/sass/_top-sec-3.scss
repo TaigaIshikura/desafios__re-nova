@@ -22,15 +22,16 @@
     padding: 88px 56px 64px;
     box-sizing: border-box;
     margin: 0 auto;
+    position: relative;
   }
   .blks-1{
-    position: relative; 
+    // position: relative; 
     padding-bottom: 18px;
     border-bottom: dotted 1px $text;
     margin-bottom: 48px;
     .grp{
       position: absolute;
-      top: -44px; left: -80px;
+      top: 32px; left: -16px;
       display: flex;
       align-items: baseline;
       &__h{
@@ -116,10 +117,29 @@
     .btns{
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
       margin: -6px -12px;
       &__item{
         width: 400px;
         margin: 6px 12px;
+      }
+    }
+  }
+  @include tb{
+    &__inr{
+      padding-top: 112px;
+    }
+    .blks-1{
+      .col2{
+        display: block;
+        &__lt{
+          padding: 0;
+        }
+        &__rt{
+          width: auto;
+          padding: 0;
+          margin: 0 auto 40px;
+        }
       }
     }
   }

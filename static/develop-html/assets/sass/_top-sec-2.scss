@@ -155,6 +155,20 @@
       }
     }
   }
+  @include tb{
+    .blks-2{
+      .col2{
+        display: block;
+        &__lt{
+          width: auto;
+          margin: 0 auto 40px;
+        }
+        &__rt{
+          
+        }
+      }
+    }
+  }
   @include sp{
   }
 }
