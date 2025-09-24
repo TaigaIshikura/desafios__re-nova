@@ -12,6 +12,7 @@
     margin: 0 auto;
   }
   .blks-1{
+    margin-bottom: 24px;
     .grp{
       display: flex;
       justify-content: center;
@@ -24,6 +25,8 @@
         width: 56px; height: 56px;
         mask: url("../img/cmn/cmn_sns01.svg") no-repeat center center / contain;
         background: $blue;
+        display: block;
+        @include hoverLink;
       }
     }
     .grp-2{
@@ -48,8 +51,48 @@
       font-weight: 700;
       color: $blue;
       margin-bottom: 16px;
+      a{
+        @include hoverLink;
+      }
     }
   }
   @include sp{
+    padding: 56px 0;
+    &__inr{
+      padding: 0 24px;
+    }
+    .blks-1{
+      .grp{
+        margin-bottom: 16px;
+        &__h{
+          margin-right: 16px;
+        }
+        &__ico{
+          width: 48px; height: 48px;
+        }
+      }
+      .grp-2{
+        display: block;
+        &__txt{
+          font-size: f(15);
+          text-align: center;
+          margin: 0 0 16px;
+        }
+        &__btn{
+          width: auto;
+          min-width: 1px;
+          margin: 0 16px;
+        }
+      }
+    }
+    .blks-2{
+      .txt{
+        font-size: f(17);
+        line-height: lh(25,17);
+        font-weight: 700;
+        color: $blue;
+        margin-bottom: 16px;
+      }
+    }
   }
 }

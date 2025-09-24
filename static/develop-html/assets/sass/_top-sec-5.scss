@@ -69,5 +69,48 @@
     margin: 0 auto;
   }
   @include sp{
+    padding: 56px 0;
+    &__inr{
+      padding: 0 12px;
+    }
+    .blks-1{
+      margin-bottom: 24px;
+      .h{
+        margin-bottom: 16px;
+      }
+      .txt{
+        font-size: f(15);
+      }
+    }
+    .blks-2{
+      margin-bottom: 40px;
+      padding: 28px 24px 32px;
+      &::after{
+        top: 4px; left: 4px; right: 4px; bottom: 4px;
+      }
+      .h{
+        font-size: f(20);
+        line-height: 1.5;
+        margin-bottom: 16px;
+      }
+      .txt{
+        font-size: f(15);
+        margin-bottom: 8px;
+      }
+      .txt-2{
+        font-size: f(15);
+        margin-bottom: 20px;
+      }
+      .btn{
+        width: auto;
+        margin: 0 8px 24px;
+      }
+      .txt-3{
+        font-size: f(15);
+      }
+    }
+    .blks-3{
+      margin: 0 12px;
+    }
   }
 }

@@ -389,6 +389,38 @@ Module
   border-color: #12609f;
   background: #12609f;
 }
+@media screen and (max-width: 768px) {
+  .m-cnt-1__item:not(:last-child) {
+    margin-bottom: 28px;
+  }
+  .m-cnt-1__grp {
+    margin-bottom: 32px;
+  }
+  .m-cnt-1__grp-2 {
+    margin-bottom: 32px;
+  }
+  .m-cnt-1__ttl {
+    font-size: 1.125rem;
+  }
+  .m-cnt-1__txt {
+    font-size: 0.9375rem;
+    margin-top: 10px;
+  }
+  .m-cnt-1__agree__txt {
+    font-size: 0.9375rem;
+    margin-bottom: 24px;
+  }
+  .m-cnt-1__agree__chk input + .wpcf7-list-item-label, .m-cnt-1__agree__chk input + span {
+    font-size: 0.9375rem;
+    padding-left: 32px;
+  }
+  .m-cnt-1__agree__chk input + .wpcf7-list-item-label::before, .m-cnt-1__agree__chk input + .wpcf7-list-item-label::after, .m-cnt-1__agree__chk input + span::before, .m-cnt-1__agree__chk input + span::after {
+    width: 24px;
+    height: 24px;
+    top: -1px;
+  }
+}
+
 /* general module 
 ========================= */
 .txtL {

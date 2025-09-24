@@ -212,13 +212,14 @@
         margin-bottom: 32px;
       }
       .btns{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin: -6px -12px;
+        display: block;
+        margin: 0 4px;
         &__item{
-          width: 400px;
-          margin: 6px 12px;
+          width: auto;
+          margin: 0;
+          &:not(:last-child){
+            margin-bottom: 16px;
+          }
         }
       }
     }

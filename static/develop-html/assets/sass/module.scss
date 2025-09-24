@@ -361,6 +361,43 @@ Module
     }
   }
   @include sp{
+    &__item{
+      &:not(:last-child){
+        margin-bottom: 28px;
+      }
+    }
+    &__grp{
+      margin-bottom: 32px;
+    }
+    &__grp-2{
+      margin-bottom: 32px;
+    }
+    &__ttl{
+      font-size: f(18);
+    }
+    &__txt{
+      font-size: f(15);
+      margin-top: 10px;
+    }
+    &__agree{
+      &__txt{
+        font-size: f(15);
+        margin-bottom: 24px;
+      }
+      &__chk{
+        input{
+          & + .wpcf7-list-item-label, & + span{
+            font-size: f(15);
+            padding-left: 32px;
+            &::before, &::after{
+              width: 24px;
+              height: 24px;
+              top: -1px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 

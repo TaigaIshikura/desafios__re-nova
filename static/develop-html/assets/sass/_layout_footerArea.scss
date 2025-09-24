@@ -110,6 +110,55 @@ Footer
     font-weight: 500;
   }
   @include sp{
-    display: none;
+    padding: 56px 0 32px;
+    &__inr{
+      padding: 0 24px;
+      width: 100%;
+    }
+    .blks-1{
+      display: block;
+      margin-bottom: 56px;
+      .grp{
+        padding-bottom: 40px;
+        border-bottom: dotted 1px #fff;
+        margin-bottom: 40px;
+      }
+      .logo{
+        width: 170px;
+        margin: 0 auto 32px;
+      }
+      .llist{
+        display: block;
+        margin: 0;
+        &__item{
+          margin: 0;
+          text-align: center;
+          &:not(:last-child){
+            margin-bottom: 24px;
+          }
+          a{
+            &._insta{
+              width: 40px; height: 40px;
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+      .logo-2{
+        width: auto;
+        margin: 0 16px 24px;
+      }
+      .llist-2{
+        display: block;
+        margin: 0;
+        &__item{
+          margin: 0 8px 0 0;
+          text-align: center;
+          &:not(:last-child){
+            margin-bottom: 12px;
+          }
+        }
+      }
+    }
   }
 }
