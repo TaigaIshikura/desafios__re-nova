@@ -19,6 +19,17 @@ Header
       -ms-flex-align: center;
           align-items: center;
 }
+.headerArea .blks-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.headerArea .blks-1 .logo {
+  margin-right: 24px;
+}
 @media screen and (min-width: 769px) {
   .headerArea .blks-1 .logo a:hover {
     opacity: 0.8;
@@ -28,6 +39,16 @@ Header
   display: block;
   height: 56px;
   width: 100%;
+}
+.headerArea .blks-1 .txt {
+  display: inline-block;
+  font-size: 1.125rem;
+  line-height: 1.56;
+  padding: 0 8px;
+  font-weight: 700;
+  margin-bottom: -3px;
+  letter-spacing: 0.02em;
+  background: #e9e9e9;
 }
 .headerArea .blks-2 {
   -webkit-box-flex: 1;

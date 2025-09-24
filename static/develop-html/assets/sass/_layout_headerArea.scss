@@ -14,7 +14,10 @@ Header
     align-items: center;
   }
   .blks-1{
+    display: flex;
+    align-items: flex-end;
     .logo{
+      margin-right: 24px;
       a{
         @include hoverLink;
       }
@@ -23,6 +26,16 @@ Header
         height: 56px;
         width: 100%;
       }
+    }
+    .txt{
+      display: inline-block;
+      font-size: f(18);
+      line-height: lh(28,18);
+      padding: 0 8px;
+      font-weight: 700;
+      margin-bottom: -3px;
+      letter-spacing: .02em;
+      background: #e9e9e9;
     }
   }
   .blks-2{
