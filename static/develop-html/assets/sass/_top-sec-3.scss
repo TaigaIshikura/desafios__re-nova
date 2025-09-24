@@ -101,6 +101,9 @@
         font-weight: 700;
         color: $blue;
       }
+      p + p{
+        margin-top: 28px;
+      }
     }
     .caution{
       font-size: f(14);
@@ -144,5 +147,80 @@
     }
   }
   @include sp{
+    padding: 56px 12px;
+    &::before{
+      content: none;
+    }
+    &__inr{
+      padding: 40px 24px;
+    }
+    .blks-1{
+      // position: relative; 
+      padding-bottom: 32px;
+      margin-bottom: 32px;
+      .grp{
+        position: static;
+        display: block;
+        margin-bottom: 20px;
+        &__h{
+          display: inline-block;
+          font-size: f(18);
+          padding: 4px 24px 4px 32px;
+          margin: 0 0 6px;
+          position: relative;
+          left: -32px;
+        }
+        &__txt{
+          font-size: f(12);
+        }
+      }
+      .col2{
+        &__lt{
+        }
+        &__rt{
+          margin-bottom: 32px;
+        }
+      }
+      .dlist{
+        &__item{
+          &:not(:last-child){
+            margin-bottom: 24px;
+          }
+          &__ttl{
+            font-size: f(15);
+          }
+          &__dtl{
+            font-size: f(15);
+          }
+        }
+      }
+      .slider{
+        
+      }
+    }
+    .blks-2{
+      .txt{
+        font-size: f(15);
+        line-height: 2;
+        margin-bottom: 24px;
+        p + p{
+          margin-top: 20px;
+        }
+      }
+      .caution{
+        font-size: f(12);
+        margin-bottom: 32px;
+      }
+      .btns{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: -6px -12px;
+        &__item{
+          width: 400px;
+          margin: 6px 12px;
+        }
+      }
+    }
   }
 }

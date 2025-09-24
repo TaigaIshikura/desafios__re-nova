@@ -429,7 +429,7 @@ Top
     width: 172px;
   }
   .top-sec-2 .blks-2 .col2__lt {
-    padding: 32px 40px 24px;
+    padding: 32px 24px 24px;
     width: auto;
     margin: 0 auto 40px;
   }
@@ -588,6 +588,9 @@ Top
   font-weight: 700;
   color: #12609f;
 }
+.top-sec-3 .blks-2 .txt p + p {
+  margin-top: 28px;
+}
 .top-sec-3 .blks-2 .caution {
   font-size: 0.875rem;
   line-height: 1.58;
@@ -635,6 +638,77 @@ Top
     margin: 0 auto 40px;
   }
 }
+@media screen and (max-width: 768px) {
+  .top-sec-3 {
+    padding: 56px 12px;
+  }
+  .top-sec-3::before {
+    content: none;
+  }
+  .top-sec-3__inr {
+    padding: 40px 24px;
+  }
+  .top-sec-3 .blks-1 {
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+  }
+  .top-sec-3 .blks-1 .grp {
+    position: static;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .top-sec-3 .blks-1 .grp__h {
+    display: inline-block;
+    font-size: 1.125rem;
+    padding: 4px 24px 4px 32px;
+    margin: 0 0 6px;
+    position: relative;
+    left: -32px;
+  }
+  .top-sec-3 .blks-1 .grp__txt {
+    font-size: 0.75rem;
+  }
+  .top-sec-3 .blks-1 .col2__rt {
+    margin-bottom: 32px;
+  }
+  .top-sec-3 .blks-1 .dlist__item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+  .top-sec-3 .blks-1 .dlist__item__ttl {
+    font-size: 0.9375rem;
+  }
+  .top-sec-3 .blks-1 .dlist__item__dtl {
+    font-size: 0.9375rem;
+  }
+  .top-sec-3 .blks-2 .txt {
+    font-size: 0.9375rem;
+    line-height: 2;
+    margin-bottom: 24px;
+  }
+  .top-sec-3 .blks-2 .txt p + p {
+    margin-top: 20px;
+  }
+  .top-sec-3 .blks-2 .caution {
+    font-size: 0.75rem;
+    margin-bottom: 32px;
+  }
+  .top-sec-3 .blks-2 .btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -6px -12px;
+  }
+  .top-sec-3 .blks-2 .btns__item {
+    width: 400px;
+    margin: 6px 12px;
+  }
+}
+
 /* top-sec-4 */
 .top-sec-4 {
   padding: 72px 0 96px;
