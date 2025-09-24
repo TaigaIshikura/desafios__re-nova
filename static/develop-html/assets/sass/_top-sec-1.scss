@@ -110,20 +110,14 @@
     max-height: none;
     min-height: 1px;
     padding-top: 72px;
-
     &::before{
-      position:absolute;
-      z-index: -1;
-      content:"";
-      display:block;
-      top:0; left:0; width: 100%; bottom: 20px;
-      background: $skyblue;
+      bottom: 0;
     }
     &__inr{
       position: relative;
       top: auto; bottom: auto;
       display: block;
-      padding: vw-sp(40) 0;
+      padding: 40px 0;
     }
     .blks-1{
       position: absolute;

@@ -89,6 +89,7 @@ Module
   font-size: f(38);
   line-height: lh(47,38);
   @include sp{
+    font-size: f(32);
   }
 }
 
@@ -166,6 +167,30 @@ Module
     .swiper-slide{
       padding-top: 56.25%;
     }
+  }
+  @include sp{
+    &__inr{
+      &::after{
+        top:-4px; left:4px;
+      }
+    }
+    &__next, &__prev{
+      width: 24px; height: 24px;
+      mask-size: 20px auto;
+    }
+    &__next{
+      right: -32px;
+    }
+    &__prev{
+      left: -32px;
+    }
+    // &__pagination{
+    //   margin: 6px 0 -2px;
+    //   .swiper-pagination-bullet{
+    //     width: 8px; height: 8px;
+    //     margin: 2px;
+    //   }
+    // }
   }
 }
 
