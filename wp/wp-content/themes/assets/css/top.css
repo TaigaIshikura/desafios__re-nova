@@ -59,15 +59,16 @@ Top
   font-weight: 500;
   letter-spacing: 0.15em;
 }
-.top-sec-1 .blks-1 .copy span {
+.top-sec-1 .blks-1 .copy span._t2 {
   letter-spacing: -0.1em;
 }
-.top-sec-1 .blks-1 .copy ruby {
+.top-sec-1 .blks-1 .copy__ruby {
   position: relative;
 }
-.top-sec-1 .blks-1 .copy ruby rt {
+.top-sec-1 .blks-1 .copy__rt {
+  display: block;
   position: absolute;
-  top: -12px;
+  top: -15px;
   left: 0;
   right: 0;
   text-align: center;
@@ -142,6 +143,82 @@ Top
     margin-right: -400px;
   }
 }
+@media screen and (max-width: 768px) {
+  .top-sec-1 {
+    max-height: none;
+    min-height: 1px;
+    padding-top: 72px;
+  }
+  .top-sec-1::before {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    bottom: 20px;
+    background: #deecf6;
+  }
+  .top-sec-1__inr {
+    position: relative;
+    top: auto;
+    bottom: auto;
+    display: block;
+    padding: 10.67vw 0;
+  }
+  .top-sec-1 .blks-1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto 0;
+    padding-bottom: 0;
+  }
+  .top-sec-1 .blks-1 .copy {
+    padding: 4.27vw 6.4vw 4.27vw 3.2vw;
+    font-size: 5.33vw;
+  }
+  .top-sec-1 .blks-1 .copy__rt {
+    top: -2.13vw;
+    font-size: 2.13vw;
+  }
+  .top-sec-1 .blks-2 {
+    height: 150vw;
+  }
+  .top-sec-1 .blks-2::after {
+    top: -2.13vw;
+    left: 2.13vw;
+  }
+  .top-sec-1 .blks-2 .mv::before, .top-sec-1 .blks-2 .mv::after {
+    width: 8.53vw;
+    height: 10.67vw;
+  }
+  .top-sec-1 .blks-2 .mv::before {
+    top: 3.2vw;
+    left: 5.33vw;
+  }
+  .top-sec-1 .blks-2 .mv::after {
+    right: 3.2vw;
+    bottom: 5.33vw;
+    -webkit-transform: scale(-1, -1);
+        -ms-transform: scale(-1, -1);
+            transform: scale(-1, -1);
+  }
+  .top-sec-1 .blks-2 .mv .swiper-container, .top-sec-1 .blks-2 .mv .swiper-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .top-sec-1 .blks-2 .mv img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
 /* top-sec-2 */
 .top-sec-2 {
   padding: 68px 0 112px;

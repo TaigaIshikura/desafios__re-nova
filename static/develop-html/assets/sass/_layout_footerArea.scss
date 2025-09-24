@@ -110,5 +110,6 @@ Footer
     font-weight: 500;
   }
   @include sp{
+    display: none;
   }
 }
