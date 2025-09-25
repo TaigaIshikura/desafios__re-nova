@@ -35,7 +35,7 @@ var autoImg = true;
 
 //WordPress開発中ならtrue
 var wpDev = true;
-var themaName = '';
+var themaName = 're-nova';
 
 //Folder to develop -> 開発フォルダ
 var develop = "./static/develop-html/";

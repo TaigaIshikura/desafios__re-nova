@@ -55,6 +55,14 @@
         @include hoverLink;
       }
     }
+    .insta{
+      #sbi_images{
+        padding: 0;
+      }
+      .sb_instagram_header, #sbi_load, #sbi_mod_error{
+        display: none!important;
+      }
+    }
   }
   @include sp{
     padding: 56px 0;
@@ -92,6 +100,11 @@
         font-weight: 700;
         color: $blue;
         margin-bottom: 16px;
+      }
+      .insta{
+        #sbi_images{
+          gap: 16px!important;
+        }
       }
     }
   }

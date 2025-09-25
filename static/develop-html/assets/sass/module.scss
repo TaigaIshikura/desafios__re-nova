@@ -23,6 +23,7 @@ Module
   padding: 12px 20px;
   box-sizing: border-box;
   box-shadow: 4px 4px 4px rgba(#000, .16);
+  cursor: pointer;
   &::after{
     position:absolute;
     content:"";
@@ -67,6 +68,9 @@ Module
         background: $blue;
       }
     }
+  }
+  &.m-btn-1_c-3{
+    background: $blue;
   }
   @include pc{
     &:hover{
@@ -214,6 +218,24 @@ Module
 ========================= */
 /* m-cnt-1 */
 .m-cnt-1{
+  .wpcf7-response-output{
+    margin: 0 0 48px!important;
+    border: 2px solid $blue!important;
+    padding: 24px!important;
+    font-weight: 700!important;
+  }
+  .invalid{
+    .wpcf7-response-output{
+      border-color: $red!important;
+      color: $red!important;
+    }
+  }
+  .wpcf7-not-valid-tip{
+    font-size: 15px;
+    font-weight: 700;
+    color: $red;
+    margin-top: 8px;
+  }
   &__item{
     &:not(:last-child){
       margin-bottom: 32px;
