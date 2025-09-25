@@ -1,0 +1,56 @@
+@charset "utf-8";
+@import "setting";
+
+/* ===============================================================================
+Complete
+=============================================================================== */
+/* complete-section
+========================= */
+/* complete-sec-1 */
+.complete-sec-1{
+  padding: 96px 0 120px;
+  &__inr{
+    padding: 0 40px;
+  }
+  .blks-1{
+    .h{
+      font-size: f(32);
+      line-height: 1.5;
+      font-weight: 700;
+      color: $blue;
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    .txt{
+      font-size: f(16);
+      line-height: 2;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .btn{
+      display: flex;
+      justify-content: center;
+    }
+  }
+  @include sp{
+    padding: 64px 0 80px;
+    &__inr{
+      padding: 0 24px;
+    }
+    .blks-1{
+      .h{
+        font-size: f(26);
+        margin-bottom: 24px;
+      }
+      .txt{
+        text-align: left;
+        font-size: f(15);
+        margin-bottom: 32px;
+      }
+      .btn{
+        display: block;
+        margin: 0 16px;
+      }
+    }
+  }
+}

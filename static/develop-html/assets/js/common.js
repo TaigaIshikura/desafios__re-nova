@@ -36,6 +36,11 @@ let mq = function() {
     $body.toggleClass('is-menuOpen');
     $menuBtnTgt.toggleClass('is-active');
   });
+  $menuBtnTgt.find('a').on('click',function() {
+    $menuBtn.removeClass('is-active');
+    $body.removeClass('is-menuOpen');
+    $menuBtnTgt.removeClass('is-active');
+  });
 }());
 
 // smoothScroll

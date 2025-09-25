@@ -4,14 +4,30 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title><?php bloginfo( 'name' ); ?></title>
+  <?php if( is_front_page() ): ?>
+  <title><?php bloginfo( 'name' ); ?>｜官民連携事業による公園複合型施設</title>
+  <?php elseif( is_page() ): ?>
+  <title><?php the_title() ?>｜<?php bloginfo( 'name' ); ?></title>
+  <?php endif; ?>
   <meta name="description" content="<?php bloginfo( 'description' ); ?>">
   <meta name="format-detection" content="telephone=no">
 
   <meta property="og:url" content="<?php echo get_current_link(); ?>">
+  <?php if (is_front_page()): ?>
   <meta property="og:type" content="website">
-  <meta property="og:title" content="<?php bloginfo( 'name' ); ?>">
+  <?php else : ?>
+  <meta property="og:type" content="article">
+  <?php endif; ?>
+  <?php if( is_front_page() ): ?>
+  <meta property="og:title" content="<?php bloginfo( 'name' ); ?>｜官民連携事業による公園複合型施設">
+  <?php elseif( is_page() ): ?>
+  <meta property="og:title" content="<?php the_title() ?>｜<?php bloginfo( 'name' ); ?>">
+  <?php endif; ?>
   <meta property="og:description" content="<?php bloginfo( 'description' ); ?>">
+
+  <?php if( is_page('contact-complete') ): ?>
+  <meta name="robots" content="noindex, nofollow">
+  <?php endif; ?>
 
   <link rel="icon" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/favicon.png">
   <link rel="apple-touch-icon" sizes="180x180" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/apple-touch-icon.png">
@@ -24,7 +40,11 @@
   <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/css/magnific-popup.css">
   <!-- / css -->
   <!-- local css -->
+  <?php if( is_front_page() ): ?>
   <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/css/top.css">
+  <?php elseif( is_page('contact-complete') ): ?>
+  <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/css/complete.css">
+  <?php endif; ?>
   <!-- / local css -->
 <?php wp_head(); ?>
 </head>
