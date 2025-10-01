@@ -11,7 +11,12 @@
               <div class="mv">
                 <div class="swiper-container">
                   <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_mv01.jpg" alt=""></div>
+                    <div class="swiper-slide">
+                      <picture>
+                        <source media="(max-width: 768px)" srcset="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_mphoto01_sp.jpg" >
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_mphoto01.jpg" alt="">
+                      </picture>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -32,12 +37,16 @@
                       <div class="m-slider-1__inr">
                         <div class="swiper-container js-aslider">
                           <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_aphoto01.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_aphoto01.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_aphoto01.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_aphoto01.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_aphoto01.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_aphoto01.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_photo01.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_photo02.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_photo03.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_photo04.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_photo05.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_photo06.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_photo07.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_photo08.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_photo09.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_photo10.jpg" alt=""></div>
                           </div>
                         </div>
                         <div class="m-slider-1__next js-asliderNext"></div>

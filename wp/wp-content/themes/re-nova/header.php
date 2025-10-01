@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <?php if( is_front_page() ): ?>
-  <title><?php bloginfo( 'name' ); ?>｜官民連携事業による公園複合型施設</title>
+  <title><?php bloginfo( 'name' ); ?>｜官民連携事業による公園型複合施設</title>
   <?php elseif( is_page() ): ?>
   <title><?php the_title() ?>｜<?php bloginfo( 'name' ); ?></title>
   <?php endif; ?>
@@ -19,7 +19,7 @@
   <meta property="og:type" content="article">
   <?php endif; ?>
   <?php if( is_front_page() ): ?>
-  <meta property="og:title" content="<?php bloginfo( 'name' ); ?>｜官民連携事業による公園複合型施設">
+  <meta property="og:title" content="<?php bloginfo( 'name' ); ?>｜官民連携事業による公園型複合施設">
   <?php elseif( is_page() ): ?>
   <meta property="og:title" content="<?php the_title() ?>｜<?php bloginfo( 'name' ); ?>">
   <?php endif; ?>
@@ -56,7 +56,7 @@
         <div class="blks-1">
           <div class="grp">
             <h1 class="grp__logo"><a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/cmn/cmn_logo01.svg" alt="Re.Nova 北山"></a></h1>
-            <p class="grp__txt">官民連携事業による公園複合型施設</p>
+            <p class="grp__txt">官民連携事業による公園型複合施設</p>
           </div>
           <div class="menuBtn js-menuBtn">
             <div class="menuBtn__bar"><span></span></div>
