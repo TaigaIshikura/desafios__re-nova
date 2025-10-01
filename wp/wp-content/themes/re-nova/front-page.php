@@ -77,7 +77,7 @@
                     </div>
                     <div class="txt-3">
                       <p><em>Nova</em>はラテン語で〜新しい・新星〜の意味を持ちます。</p>
-                      <p>地域住民の皆様やお立ち寄り頂く方々に歴史と未来の彩りを感じて頂き、<br class="pconly">現在を創造する豊かな時間をお過ごし頂けるような施設設計、運営に努めて参ります。</p>
+                      <p>地域住民の皆様やお立ち寄り頂く方々に歴史と未来の彩りを感じて頂き、<br class="pconly">現在を創造する豊かな時間をお過ごし頂ける施設を目指します。</p>
                     </div>
                   </div>
                 </div>
@@ -99,12 +99,8 @@
                       <div class="m-slider-1__inr">
                         <div class="swiper-container js-eslider">
                           <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_ephoto01.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_ephoto01.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_ephoto01.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_ephoto01.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_ephoto01.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_ephoto01.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_event01.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_event02.jpg" alt=""></div>
                           </div>
                         </div>
                         <div class="m-slider-1__next js-esliderNext"></div>

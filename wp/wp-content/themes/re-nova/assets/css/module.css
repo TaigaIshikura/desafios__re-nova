@@ -149,7 +149,7 @@ Module
   z-index: 1;
 }
 .m-slider-1 .swiper-slide {
-  padding-top: 100%;
+  padding-top: 75%;
   position: relative;
 }
 .m-slider-1 .swiper-slide img {
@@ -215,7 +215,7 @@ Module
   border-color: #deecf6;
 }
 .m-slider-1.m-slider-1_t2 .swiper-slide {
-  padding-top: 56.25%;
+  padding-top: 61.8%;
 }
 @media screen and (max-width: 768px) {
   .m-slider-1__inr::after {

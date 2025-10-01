@@ -47,10 +47,10 @@
         slidesPerView: 'auto',
         spaceBetween: 0,
         effect: 'fade',
-        autoplay: {
-          delay: 2000,
-          disableOnInteraction: false,
-        }
+        // autoplay: {
+        //   delay: 2000,
+        //   disableOnInteraction: false,
+        // }
       });
       eslider = new Swiper('.js-eslider', {
         speed: 1000,
@@ -66,10 +66,10 @@
         slidesPerView: 'auto',
         spaceBetween: 0,
         effect: 'fade',
-        autoplay: {
-          delay: 2000,
-          disableOnInteraction: false,
-        }
+        // autoplay: {
+        //   delay: 2000,
+        //   disableOnInteraction: false,
+        // }
       });
     });
   </script>
