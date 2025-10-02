@@ -101,6 +101,9 @@
                           <div class="swiper-wrapper">
                             <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_event01.jpg" alt=""></div>
                             <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_event02.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_event03.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_event04.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_event05.jpg" alt=""></div>
                           </div>
                         </div>
                         <div class="m-slider-1__next js-esliderNext"></div>
@@ -174,10 +177,10 @@
               </div><!-- / .blks-1 -->
               <div class="blks-2">
                 <h3 class="h">イベントスペースの<br class="sponly">お申し込みにつきまして</h3>
-                <p class="txt">イベントスペース利用のお申し込み・ご相談は、Instagramより承っております。</p>
-                <p class="txt-2">※問い合わせフォームからではなく、<br class="sponly">必ずInstagramのDMよりご連絡ください。</p>
+                <p class="txt">イベントスペース利用のお申し込み・ご相談は、Instagramよりお待ちしております。</p>
+                <p class="txt-2">※Instagramではイベントスペースに関する詳細情報も発信しておりますので、ぜひご覧ください。</p>
                 <p class="btn"><a href="https://www.instagram.com/re.nova_kitayama" target="_blank" class="m-btn-1"><span class="m-btn-1__insta"></span><span class="m-btn-1__txt">Instagramより<br class="sponly">お申し込み・ご相談</span></a></p>
-                <p class="txt-3">それ以外のお問い合わせは、<br class="sponly">下記フォームをご利用ください。</p>
+                <p class="txt-3">Instagramをご利用でない場合などは、下記フォームよりお気軽にご連絡ください。</p>
               </div><!-- / .blks-2 -->
               <div id="contactform" class="anchor js-anchor">
                 <div class="blks-3">
