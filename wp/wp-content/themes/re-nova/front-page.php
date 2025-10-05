@@ -202,9 +202,9 @@
               </div>
             </div>
             <div class="map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3266.241921494856!2d135.76358087620994!3d35.0506902643527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600109003f5e59a3%3A0xbe32449fe5846758!2zUmUuTm92Ye-8iOODquODjuODtOOCoe-8ieWMl-WxsQ!5e0!3m2!1sja!2sjp!4v1758590228346!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3266.233755166812!2d135.76409127620988!3d35.050894464341816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001090075058e65%3A0x22e1c681d70f8685!2zUmUuTm92Ye-8iOODqi7jg47jg7TjgqHvvInljJflsbE!5e0!3m2!1sja!2sjp!4v1759487362696!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <p class="btn"><a href="https://maps.app.goo.gl/omT9XFAfgTaGyy9N8" target="_blank" class="m-btn-1 m-btn-1_c-2"><span class="m-btn-1__arr"></span><span class="m-btn-1__txt">Google Map</span></a></p>
+            <p class="btn"><a href="https://maps.app.goo.gl/r9JPnijZmmGvBp149" target="_blank" class="m-btn-1 m-btn-1_c-2"><span class="m-btn-1__arr"></span><span class="m-btn-1__txt">Google Map</span></a></p>
           </div><!-- / .blks-1 -->
         </div><!-- / .top-sec-6 -->
       </div><!-- / .top-secs -->
