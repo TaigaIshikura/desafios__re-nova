@@ -11,7 +11,7 @@
             </ul>
           </div>
           <div class="grp-2">
-            <p class="logo-2"><a href="https://www.regrand.jp/" target="_blank"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/cmn/cmn_logo02.png" alt="日本リグランド株式会社"></a></p>
+            <p class="logo-2"><a href="https://www.regrand.jp/" target="_blank"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/cmn/cmn_logo02.png" alt="日本リグランド株式会社 理想を追い求め、そして実現する。そんな企業でありたい。"></a></p>
             <ul class="llist-2">
               <li class="llist-2__item"><a href="https://www.regrand.jp/about/profile" target="_blank">会社概要</a></li>
               <li class="llist-2__item"><a href="https://www.regrand.jp/policy" target="_blank">プライバシーポリシー</a></li>

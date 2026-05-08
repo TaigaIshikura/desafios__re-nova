@@ -627,6 +627,11 @@ Top
   width: 400px;
   margin: 6px 12px;
 }
+@media screen and (min-width: 769px) {
+  .top-sec-3 .blks-2 .btns__item._t2, .top-sec-3 .blks-2 .btns__item._t3 {
+    width: 280px;
+  }
+}
 @media screen and (max-width: 1040px) {
   .top-sec-3__inr {
     padding-top: 112px;

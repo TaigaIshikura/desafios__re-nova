@@ -37,16 +37,23 @@
                       <div class="m-slider-1__inr">
                         <div class="swiper-container js-aslider">
                           <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_photo01.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_photo02.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_photo03.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_photo04.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_photo05.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_photo06.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_photo07.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_photo08.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_photo09.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_photo10.jpg" alt=""></div>
+                            <!-- <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_photo01.jpg" alt=""></div> -->
+                            <!-- <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_photo02.jpg" alt=""></div> -->
+                            <!-- <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_photo03.jpg" alt=""></div> -->
+                            <!-- <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_photo04.jpg" alt=""></div> -->
+                            <!-- <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_photo05.jpg" alt=""></div> -->
+                            <!-- <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_photo06.jpg" alt=""></div> -->
+                            <!-- <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_photo07.jpg" alt=""></div> -->
+                            <!-- <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_photo08.jpg" alt=""></div> -->
+                            <!-- <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_photo09.jpg" alt=""></div> -->
+                            <!-- <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_photo10.jpg" alt=""></div> -->
+                            <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_photo11.png" alt="2026年4月 GRAND OPEN！"></div>
+                            <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_photo12.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_photo13.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_photo14.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_photo15.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_photo16.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/top/top_photo17.jpg" alt=""></div>
                           </div>
                         </div>
                         <div class="m-slider-1__next js-asliderNext"></div>
@@ -140,7 +147,8 @@
                 <p class="caution">※イベントスペース利用のお申し込み・ご相談は、<a href="https://www.instagram.com/re.nova_kitayama" target="_blank">InstagramのDM</a>からお気軽にご連絡ください。</p>
                 <div class="btns">
                   <div class="btns__item"><a href="https://www.instagram.com/re.nova_kitayama" target="_blank" class="m-btn-1"><span class="m-btn-1__insta"></span><span class="m-btn-1__txt">Instagramより<br class="sponly">お申し込み・ご相談</span></a></div>
-                  <div class="btns__item"><a href="https://www.youtube.com/watch?v=ksUwNwpU_ss" target="_blank" class="m-btn-1 js-youtube"><span class="m-btn-1__arr"></span><span class="m-btn-1__txt">施設紹介動画をみる</span></a></div>
+                  <div class="btns__item _t2"><a href="https://www.youtube.com/watch?v=ksUwNwpU_ss" target="_blank" class="m-btn-1 js-youtube"><span class="m-btn-1__arr"></span><span class="m-btn-1__txt">施設紹介動画をみる</span></a></div>
+                  <div class="btns__item _t3"><a href="" target="_blank" class="m-btn-1"><span class="m-btn-1__arr"></span><span class="m-btn-1__txt">店舗情報はこちら</span></a></div>
                 </div>
               </div><!-- / .blks-2 -->
             </div><!-- / .top-sec-3__inr -->
