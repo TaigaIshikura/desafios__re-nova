@@ -3,7 +3,6 @@
 namespace InstagramFeed\Helpers;
 
 use DateTime;
-use InstagramFeed\Vendor\Brumann\Polyfill\Unserialize;
 
 /**
  * @since 6.1.2
@@ -79,9 +78,6 @@ class Util
 			),
 			'feed_analytics' => array(
 				'free' => 'sb-analytics/sb-analytics-pro.php',
-			),
-			'clicksocial' => array(
-				'free' => 'click-social/click-social.php'
 			)
 		);
 
@@ -99,7 +95,6 @@ class Util
 			}
 		}
 
-		$active_plugins_info['clicksocial_path'] = 'https://downloads.wordpress.org/plugin/click-social.zip';
 		$active_plugins_info['installed_plugins'] = $installed_plugins;
 
 		return $active_plugins_info;
@@ -246,8 +241,12 @@ class Util
 	/**
 	 * Safely unserialize data
 	 *
-	 * @param $data
-	 * @return mixed
+	 * Uses native PHP unserialize with allowed_classes option for security.
+	 * This prevents object injection attacks by disallowing class instantiation.
+	 *
+	 * @param mixed $data Data to unserialize
+	 * @return mixed Unserialized data
+	 * @since 6.1.2
 	 */
 	public static function safe_unserialize($data)
 	{
@@ -255,7 +254,9 @@ class Util
 			return $data;
 		}
 
-		$data = Unserialize::unserialize($data, ['allowed_classes' => false]);
+		// Use native PHP 7.0+ unserialize with allowed_classes option
+		// This is safe since minimum PHP version is 7.4
+		$data = unserialize($data, ['allowed_classes' => false]);
 		return $data;
 	}
 }

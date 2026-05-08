@@ -4,7 +4,7 @@
 
 $loader = (static function () {
     // Backup the autoloaded Composer files
-    $existingComposerAutoloadFiles = $GLOBALS['__composer_autoload_files'] ?? [];
+    $existingComposerAutoloadFiles = isset($GLOBALS['__composer_autoload_files']) ? $GLOBALS['__composer_autoload_files'] : [];
 
     $loader = require_once __DIR__.'/autoload.php';
     // Ensure InstalledVersions is available
@@ -29,6 +29,6 @@ if (!function_exists('humbug_phpscoper_expose_class')) {
         }
     }
 }
-humbug_phpscoper_expose_class('ComposerAutoloaderInit2beef32bcbe6958c8d0c584a584660fb', 'InstagramFeed\Vendor\ComposerAutoloaderInit2beef32bcbe6958c8d0c584a584660fb');
+humbug_phpscoper_expose_class('ComposerAutoloaderInitb2e3b3853ee8eef122f948f4c32012ac', 'InstagramFeed\Vendor\ComposerAutoloaderInitb2e3b3853ee8eef122f948f4c32012ac');
 
 return $loader;
